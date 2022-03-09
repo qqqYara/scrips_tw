@@ -1,0 +1,40 @@
+//---------------------------------------------------------------------------
+	>>> Home Page :
+	---------------------------------------------------------------------------
+
+extends ./template/main
+
+block variables
+
+	- let pageTitle = 'Video call page';
+	- let padeDescription = pageTitle + '';
+
+block content
+
+
+	section.video_call
+		.container.video_call-container
+			img.video_call-my_cam(src="images/model1.jpg" alt="image")
+			.video_call-controls
+				.top
+					.caller-info
+						img.image(src="images/model3.jpg" alt="image")
+						.name-timer
+							ul
+								li.name Dr Aisha Haddad
+								li.timer 0:01
+					.btn-end-call
+						//- <i class="fa-solid fa-phone-hangup"></i>
+						<svg class="svg-icon" width="30px" fill="#fff" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M512 384c-68.266667 0-134.4 10.666667-196.266667 30.72v132.266667c0 17.066667-9.813333 31.573333-23.893333 38.4-41.813333 20.906667-79.786667 47.786667-113.92 78.933333-7.253333 7.68-17.92 12.373333-28.586667 12.373333-12.8 0-23.466667-5.12-31.146666-12.8L12.373333 558.08a42.24 42.24 0 0 1-12.373333-29.866667c0-11.946667 4.693333-22.613333 12.373333-30.293333C142.506667 374.186667 318.293333 298.666667 512 298.666667c193.706667 0 369.493333 75.52 499.626667 199.253333 7.68 7.68 12.373333 18.346667 12.373333 30.293333 0 11.52-4.693333 22.186667-12.373333 29.866667l-105.813334 105.813333c-7.68 7.68-18.346667 12.8-31.146666 12.8a41.813333 41.813333 0 0 1-29.013334-12.373333c-33.706667-31.146667-71.68-58.026667-113.493333-78.933333a42.496 42.496 0 0 1-23.893333-38.4v-132.266667C646.4 394.666667 580.266667 384 512 384z" fill="" /></svg>
+				.bottom
+					.bottom-btn.btn-microfone
+						<i class="fa-regular fa-microphone"></i>
+					.bottom-btn.btn-add-person
+						<i class="fa-regular fa-user-plus"></i>
+					.bottom-btn.btn-chat
+						i.fa-thin.fa-comment
+						span 1
+					.bottom-btn.btn-picture-in-picture
+						<i class="fa-regular fa-clone"></i>
+					.bottom-btn.btn-video
+						<i class="fa-solid fa-video"></i>

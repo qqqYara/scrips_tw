@@ -1,0 +1,27 @@
+/* --------------------------------------------------------------------------
+ * >>> Skeleton :
+ * -------------------------------------------------------------------------- */
+ 
+body {
+  position: relative;
+  font-family: $mainFont;
+  // box-sizing: border-box;
+}
+
+.container{
+  max-width: 100%;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+
+  @include ml-up {
+    max-width: 375px;
+  }
+  @include md-up {
+    max-width: 768px;
+  }
+  @include lg-up {
+    max-width: 1180px;
+  }
+
+}
