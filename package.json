@@ -1,12 +1,12 @@
 {
-  "name": "GulpPug-VB",
+  "name": "GulpPug",
   "version": "1.0.0",
-  "description": "bardin-dev",
+  "description": "yaroslav-dev",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Vladyslav Tsyvinda",
+  "author": "Yara",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.12.0",
